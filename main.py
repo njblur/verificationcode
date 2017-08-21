@@ -70,7 +70,8 @@ def main(train):
         init = tf.global_variables_initializer()
         sess.run(init)
         if(train):
-            saver.restore(sess,'verify.model')
+            if(os.path.exists('verify.model.meta')):
+                saver.restore(sess,'verify.model')
             train_data_g, target_data_g = datagen.generate_data(batch_size*1500)
             for i in range(1,1+epoch):
                 for j in range(1500):
