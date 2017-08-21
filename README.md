@@ -1,4 +1,4 @@
-# verificationcode
+# An YOLO like verification code recognization network.
 this is a very simple network to recognize the graphic verification code. it is used to demonstrate the power of convolution network.
 instead of classification, the convnet has the abilities to detect the object size, location, orientation,color, etc as shown by R-CNNs
 and YOLO. the final classification is just a combination of above factors I believe. faster R-CNN and YOLO are used to detect the object calss
