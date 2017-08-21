@@ -6,3 +6,5 @@ and also their locations. but for verification code recognization, bounding-boxe
 of the chars from left to right. so I reduce the network for this specific task. this is NOT yolo, just inspired by it.
 run "python main.py --train" to train the network first. 
 the run "python main.py" to see the results of 5 random generated graphic codes.
+
+contact me at jianwu.hu@gmail.com if you are interested. 
