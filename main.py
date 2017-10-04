@@ -95,7 +95,8 @@ def main(train):
 def plot_pred(images,pred):
     for i in range(len(pred)):
         string = [datagen.idx_to_char[idx] for idx in pred[i]]
-        print ''.join(string)
+        string = ''.join(string)
+        plt.title(string)
         plt.imshow(images[i])
         plt.show()
 if __name__ == '__main__':
