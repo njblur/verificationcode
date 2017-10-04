@@ -96,6 +96,7 @@ def plot_pred(images,pred):
     for i in range(len(pred)):
         string = [datagen.idx_to_char[idx] for idx in pred[i]]
         string = ''.join(string)
+        plt.axis('off')
         plt.title(string)
         plt.imshow(images[i])
         plt.show()
